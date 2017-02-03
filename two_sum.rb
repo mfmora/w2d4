@@ -27,7 +27,7 @@ def okay_two_sum?(arr,val)
 end
 
 def two_sum?(arr,val)
-
+  #O(n)
   hash = {}
 
   arr.each do |el|
@@ -35,8 +35,4 @@ def two_sum?(arr,val)
     hash[el] = true
   end
   false
-  # hash = {}
-  # arr.each { |el| hash[el] = val - el }
-  #
-  # hash.values.any? { |value| hash[value] }
 end
